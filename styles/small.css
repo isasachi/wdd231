@@ -1,0 +1,152 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.profile img {
+    width: 20%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.menu-toggle {
+    background: none;
+    padding: 0;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    flex: 1;
+    background-color: black;
+    text-align: center;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.nav-links .active {
+    color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+h2 {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: .5rem;
+}
+
+button {
+    flex: 1;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.location-label {
+    text-align: center;
+}
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.cert {
+    padding: 10px;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+}
+
+.cert.no-bg {
+    background-color: lightgray;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+}
+
+footer img {
+    width: 30px;
+    margin-top: 5px;
+}

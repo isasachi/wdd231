@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .profile {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+
+    .nav-links li {
+        padding: 10px 20px;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .coursework {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .location {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .location img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .certificates {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .certificates .filters {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .certificates .cert-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}

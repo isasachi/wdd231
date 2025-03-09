@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Isaac Salirrosas" />
+    <meta
+      name="description"
+      content="Isaac Salirrosas' course home page showcasing coursework and certifications."
+    />
+    <title>Isaac Salirrosas - Course Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+    <script defer src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="profile">
+        <img src="./images/isaac_profile_img_sm.jpg" alt="Profile Picture" />
+        <h1>Isaac Salirrosas</h1>
+        <button class="menu-toggle">☰</button>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">GitHub Profile</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="coursework">
+        <h2>Course Work</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </section>
+      <section class="location">
+        <h2>Trujillo, Peru</h2>
+        <img
+          src="./images/caballitos_de_totora.jpg"
+          alt="Caballitos de Totora"
+        />
+        <p class="location-label">Caballitos de Totora</p>
+      </section>
+      <section class="certificates">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="filters">
+          <button data-filter="all">All</button>
+          <button data-filter="cse">CSE</button>
+          <button data-filter="wdd">WDD</button>
+        </div>
+        <div class="cert-list">
+          <div class="cert cse">CSE 110</div>
+          <div class="cert wdd">WDD 130</div>
+          <div class="cert cse">CSE 111</div>
+          <div class="cert cse">CSE 210</div>
+          <div class="cert wdd">WDD 131</div>
+          <div class="cert wdd no-bg">WDD 231</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> 🗿 Isaac Salirrosas 🗿 - Trujillo, Peru
+      </p>
+      <p>Last Update: <span id="last-update"></span></p>
+      <img src="./images/peru_flag.png" alt="Peru Flag" />
+    </footer>
+  </body>
+</html>
