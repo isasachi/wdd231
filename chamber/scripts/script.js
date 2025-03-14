@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create elements to add to the div.cards element
         let card = document.createElement("section");
         card.innerHTML = `
-        <img src="${business.image}">
+        <img src="${window.location.href.startsWith('https://isasachi.github.io/') ? "/wdd231" + business.image : business.image}">
         <p>${business.name}</p>
         <p>${business.address}</p>
         <p>${business.phone}</p>
