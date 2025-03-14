@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+
+    .logo {
+        overflow: visible;
+        max-width: none;
+    }
+    
+    .logo img {
+        max-width: 100px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .nav-links li {
+        padding: 10px 20px;
+        border: none;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}

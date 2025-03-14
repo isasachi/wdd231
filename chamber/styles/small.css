@@ -1,0 +1,203 @@
+:root {
+    --accent-dark-red: #7d0a0a;
+    --accent-soft-red: #bf3131;
+    --accent-soft-beige: #ead196;
+    --pure-chalk: #eeeeee;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--pure-chalk);
+}
+
+header {
+    background-color: var(--accent-dark-red);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links.open {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+
+.nav-links li {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: var(--accent-soft-beige);
+}
+
+.nav-links .active {
+    color: var(--accent-soft-beige);
+}
+
+main {
+    width: 100%;
+}
+
+#directory-selector{
+    width: 100%;
+    text-align: center;
+}
+
+#directory-selector button{
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 5px;
+    background-color: var(--accent-dark-red);
+    color: white;
+    border: 1px black solid;
+}
+
+#directory-selector button.active{
+    background-color: var(--accent-soft-beige);
+    color: black;
+}
+
+/* Cards view */
+
+.directory-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+}
+
+.directory-cards section{
+    text-align: center;    
+    border: 2px solid grey;    
+    width: 300px;
+    background-color: var(--accent-dark-red);
+    color: white;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.directory-cards section img {
+    width: 100% ;
+}
+
+/* List View */
+
+.directory-list{    
+    display: grid;
+    justify-items: center;   
+    padding: 1rem;    
+}
+
+main a {    
+    color: lightgrey;
+}
+
+main a:visited {    
+    color: lightgrey;
+}
+
+.directory-list section img{
+    display: none;
+}
+
+.directory-list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.directory-list section:nth-child(odd) {
+    background-color: var(--accent-dark-red);
+    color: white;
+}
+
+.directory-list section:nth-child(even) {
+    background-color: var(--accent-soft-red);
+    color: white;
+}
+
+footer {
+    display: flex;
+    background-color: var(--accent-dark-red);
+    color: white;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer i {
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+
+

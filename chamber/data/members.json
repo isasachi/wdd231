@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Sunrise Bakery",
+      "address": "Jr. Pizarro 723, Trujillo 13001, Peru",
+      "phone": "+51 987 654 321",
+      "website": "https://sunrisebakery.com",
+      "image": "/chamber/images/sunrise-bakery.jpg",
+      "membership_level": 3
+    },
+    {
+      "name": "Tech Solutions Ltd.",
+      "address": "Av. España 1635, Trujillo 13001, Peru",
+      "phone": "+51 912 345 678",
+      "website": "https://techsolutions.com",
+      "image": "/chamber/images/techsolutionsltd.jpeg",
+      "membership_level": 2
+    },
+    {
+      "name": "Green Leaf Cafe",
+      "address": "Jr. San Martín 458, Trujillo 13008, Peru",
+      "phone": "+51 934 567 890",
+      "website": "https://greenleafcafe.com",
+      "image": "/chamber/images/green-leaf-cafe.jpg",
+      "membership_level": 1
+    },
+    {
+      "name": "Blue Ocean Hotel",
+      "address": "Av. Larco 812, Trujillo 13008, Peru",
+      "phone": "+51 945 678 123",
+      "website": "https://blueoceanhotel.com",
+      "image": "/chamber/images/blue-ocean-hotel.jpg",
+      "membership_level": 3
+    },
+    {
+      "name": "Elite Gym",
+      "address": "Calle Los Granados 151, Urb. California, Trujillo 13009, Peru",
+      "phone": "+51 923 456 789",
+      "website": "https://elitegym.com",
+      "image": "/chamber/images/elite-gym.jpg",
+      "membership_level": 2
+    },
+    {
+      "name": "Creative Marketing Agency",
+      "address": "Av. América Sur 3055, Urb. San Andrés, Trujillo 13008, Peru",
+      "phone": "+51 956 789 234",
+      "website": "https://creativemarketing.com",
+      "image": "/chamber/images/creative-marketing-agency.jpg",
+      "membership_level": 1
+    },
+    {
+      "name": "Luxury Auto Dealers",
+      "address": "Av. Nicolás de Piérola 1040, Trujillo 13001, Peru",
+      "phone": "+51 978 234 567",
+      "website": "https://luxuryautodealers.com",
+      "image": "/chamber/images/luxury-auto-dealers.jpg",
+      "membership_level": 3
+    }
+  ]
+  

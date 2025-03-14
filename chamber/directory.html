@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Trujillo Chamber of Commerce Directory Page" />
+    <meta
+      name="description"
+      content="Discover top businesses and services in Trujillo with the Trujillo Chamber of Commerce Directory. Connect with local companies, explore industry leaders, and grow your network today!"
+    />
+    <meta name="author" content="Isaac Salirrosas" />
+    <meta
+      property="og:title"
+      content="Trujillo Chamber of Commerce Directory Page"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://camaralalibertad.org.pe/wp-content/uploads/2023/07/camara-de-comercio-de-la-libertad-portada.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://isasachi.github.io/wdd231/chamber/Directory.html"
+    />
+    <title>Directory Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+    <script
+      src="https://kit.fontawesome.com/f63bcfaae7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="directory.html"
+          ><img src="./images/chamber_logo.png" alt="Logo"
+        /></a>
+        <div class="logo-title-subtitle">
+          <h1>Trujillo</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+        <button class="menu-toggle">☰</button>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="directory-selector">
+        <button id="directory-grid" class="active">GRID</button>
+        <button id="directory-list">LIST</button>
+      </div>
+      <div id="directory-data" class="directory-cards"></div>
+    </main>
+    <footer>
+      <div class="chamber-info">
+        <strong><p>Trujillo Chamber of Commerce</p></strong>
+        <p>Jr. Junín, N°454</p>
+        <p>Trujillo, La Libertad</p>
+        <p>info@trujillocc.org</p>
+        <p>+51923745746</p>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-youtube fa-3x"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter fa-3x"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+      </div>
+      <div class="project-info">
+        <p>WDD231 Class Project</p>
+        <p>Isaac Salirrosas</p>
+        <p>&copy; <span id="year"></span> Trujillo Chamber of Commerce</p>
+        <p>Last Modification: <span id="last-update"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
