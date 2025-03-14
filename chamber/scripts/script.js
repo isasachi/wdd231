@@ -66,15 +66,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function getBusinessData() {
     try {
-    const response = await fetch("/chamber/data/members.json");
-    if (response.ok) {
-        const data = await response.json();
-        displayBusinesses(data);
-    } else {
-        console.error("There was an error loading the member directory data.");
-        const cards = document.querySelector(".directory-cards");
-        cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
-    }
+        if (window.location.href.startsWith('https://isasachi.github.io/')) {
+            const response = await fetch("/wdd231/chamber/data/members.json");
+            if (response.ok) {
+                const data = await response.json();
+                displayBusinesses(data);
+            } else {
+                console.error("There was an error loading the member directory data.");
+                const cards = document.querySelector(".directory-cards");
+                cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
+            }
+        } else {
+            const response = await fetch("/chamber/data/members.json");
+            if (response.ok) {
+                const data = await response.json();
+                displayBusinesses(data);
+            } else {
+                console.error("There was an error loading the member directory data.");
+                const cards = document.querySelector(".directory-cards");
+                cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
+            }
+        }
     }
     catch (error){
         console.error("There was an error loading the member directory data.", error);
