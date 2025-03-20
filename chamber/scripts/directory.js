@@ -1,26 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Toggle mobile menu
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-links");
-
-    menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("open");
-    });
-
-    // Manage active navigation link highlighting
-    const navLinks = document.querySelectorAll(".nav-links a");
-
-    navLinks.forEach(link => {
-        link.addEventListener("click", function () {
-            // Remove "active" class from all links
-            navLinks.forEach(nav => nav.classList.remove("active"));
-
-            // Add "active" class to the clicked link
-            this.classList.add("active");
-        });
-    });
-
-    //Manage grid and list businesses display
+    //Manage changing between grid and list display views
     const gridSelector = document.querySelector('#directory-grid');
     const listSelector = document.querySelector('#directory-list');
     const directoryData = document.querySelector('#directory-data');
@@ -43,12 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    //This function builds the HTML for each business in the members.json file and displays it on the page
     const displayBusinesses = (members) => {
     const cards = document.querySelector(".directory-cards"); // select the output container element
 
     members.forEach((business) => {
         // Create elements to add to the div.cards element
         let card = document.createElement("section");
+        //Add your own GitHub Pages URL to the startsWith method
         card.innerHTML = `
         <img src="${window.location.href.startsWith('https://isasachi.github.io/') ? "/wdd231" + business.image : business.image}">
         <p>${business.name}</p>
@@ -60,12 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
         card.classList.add('gold-member');
         }
         cards.appendChild(card);
-    }); // end of forEach loop
+    }); 
     
-    }; // end of function expression
+    }; 
 
+    //This function fetches the business JSON data from the members.json file (Use your own members.json file)
     async function getBusinessData() {
     try {
+        //Add your own GitHub Pages URL to the startsWith method
         if (window.location.href.startsWith('https://isasachi.github.io/')) {
             const response = await fetch("/wdd231/chamber/data/members.json");
             if (response.ok) {
@@ -97,9 +80,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     getBusinessData();
 
-    // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Set last update time
-    document.getElementById("last-update").textContent = new Date().toLocaleString();
 });

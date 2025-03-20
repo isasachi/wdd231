@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Trujillo Chamber of Commerce Directory Page" />
+    <meta name="title" content="Trujillo Chamber of Commerce Home Page" />
     <meta
       name="description"
-      content="Discover top businesses and services in Trujillo with the Trujillo Chamber of Commerce Directory. Connect with local companies, explore industry leaders, and grow your network today!"
+      content="This is the Trujillo Chamber of Commerce Home Page. Discover the latest news, events, and opportunities for your business in Trujillo."
     />
     <meta name="author" content="Isaac Salirrosas" />
     <meta
       property="og:title"
-      content="Trujillo Chamber of Commerce Directory Page"
+      content="Trujillo Chamber of Commerce Home Page"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -20,9 +20,9 @@
     />
     <meta
       property="og:url"
-      content="https://isasachi.github.io/wdd231/chamber/Directory.html"
+      content="https://isasachi.github.io/wdd231/chamber/index.html"
     />
-    <title>Trujillo Chamber of Commerce Directory Page</title>
+    <title>Trujillo Chamber of Commerce Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,9 +43,10 @@
       crossorigin="anonymous"
     ></script>
     <!-- Scripts -->
-    <script defer src="./scripts/directory.js"></script>
     <script defer src="./scripts/navigation.js"></script>
     <script defer src="./scripts/menuToggle.js"></script>
+    <script defer src="./scripts/spotlights.js"></script>
+    <script defer src="./scripts/weather.js"></script>
     <script defer src="./scripts/dates.js"></script>
   </head>
   <body>
@@ -69,12 +70,12 @@
         <nav class="navbar">
           <ul class="nav-links">
             <li>
-              <a href="index.html"
+              <a href="index.html" class="active"
                 ><span>Home<i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </li>
             <li>
-              <a href="directory.html" class="active"
+              <a href="directory.html"
                 ><span>Directory<i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </li>
@@ -93,14 +94,78 @@
       </div>
     </header>
     <main>
-      <div class="heading">
-        <h1>Directory</h1>
+      <div class="hero">
+        <img
+          src="https://ddclalibertad.gob.pe/wp-content/gallery/inauguracion-plaza-de-armas/08.jpg"
+          alt="Chamber of Commerce"
+        />
+        <div class="hero-content">
+          <h1>Welcome to the Trujillo Chamber of Commerce</h1>
+          <a href="#">Join the Chamber</a>
+        </div>
       </div>
-      <div id="directory-selector">
-        <button id="directory-grid" class="active">Grid</button>
-        <button id="directory-list">List</button>
+      <div class="main-content">
+        <div class="events-section">
+          <h2>Current Events</h2>
+          <div class="current-events">
+            <section class="event">
+              <div class="event-image">
+                <img
+                  src="https://turiweb.pe/img2/apavit-feria8-290322.JPG"
+                  alt="Event"
+                />
+              </div>
+              <div class="event-content">
+                <span>March 28</span>
+                <a href="#">
+                  <h3>
+                    National and International Tourism Fair for Industry
+                    Professionals
+                  </h3>
+                </a>
+              </div>
+            </section>
+            <section class="event">
+              <div class="event-image">
+                <img
+                  src="https://trexperienceperu.com/sites/default/files/semana-santa-trujillo_0.webp"
+                  alt="Event"
+                />
+              </div>
+              <div class="event-content">
+                <span>March 29 - April 5</span>
+                <a href="#">
+                  <h3>
+                    Traditional Semana Santa Celebrations and Religious
+                    Processions
+                  </h3>
+                </a>
+              </div>
+            </section>
+            <section class="event">
+              <div class="event-image">
+                <img
+                  src="https://cdn.joinnus.com/user/1108655/G7sI0E5HrjvATll.webp"
+                  alt="Event"
+                />
+              </div>
+              <div class="event-content">
+                <span>April 5-6</span>
+                <a href="#">
+                  <h3>
+                    Expo-Friki 2025: Pop Culture, Gaming, and Anime Convention
+                  </h3>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div id="weather" class="weather"></div>
+        <div class="spotlights-section">
+          <h2>Spotlights</h2>
+          <div id="spotlights" class="spotlights"></div>
+        </div>
       </div>
-      <div id="directory-data" class="directory-cards"></div>
     </main>
     <footer>
       <div class="chamber-info">

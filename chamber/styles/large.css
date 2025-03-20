@@ -1,33 +1,90 @@
 @media screen and (min-width: 768px) {
-    header {
-        flex-direction: row;
+    span, p {
+        font-size: 1.125rem;
+        font-weight: 300;
     }
 
-    .logo {
-        overflow: visible;
+    .logo span {
+        font-size: 1.125rem;
         max-width: none;
     }
-    
-    .logo img {
-        max-width: 100px;
-        height: auto;
-        object-fit: contain;
+
+    .header-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    nav {
-        display: flex;
-        align-items: center;
+    .heading h1 {
+        font-size: 4rem;
     }
 
     .nav-links {
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        position: static;
+        background: none;
+        width: auto;
+        gap: 20px;
+    }
+    
+    .nav-links li {
+        border: none;
     }
 
-    .nav-links li {
-        padding: 10px 20px;
-        border: none;
+    .nav-links a span i {
+        display: none;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero img {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .hero-content {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-content a {
+        font-size: 1.125rem;
+    }
+
+    .current-events {
+        flex-direction: row;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .events-section {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .weather {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .spotlights-section {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .spotlights {
+        flex-direction: row;
     }
 
     footer {
