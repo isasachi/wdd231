@@ -87,6 +87,12 @@
         flex-direction: row;
     }
 
+    .join-main-container {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
     footer {
         flex-direction: row;
         justify-content: space-evenly;

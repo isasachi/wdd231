@@ -3,26 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Trujillo Chamber of Commerce Directory Page" />
+    <meta
+      name="title"
+      content="Trujillo Chamber of Commerce Confirmation Page"
+    />
     <meta
       name="description"
-      content="Discover top businesses and services in Trujillo with the Trujillo Chamber of Commerce Directory. Connect with local companies, explore industry leaders, and grow your network today!"
+      content="This is the Trujillo Chamber of Commerce confirmation page after successfully subscribing."
     />
     <meta name="author" content="Isaac Salirrosas" />
-    <meta
-      property="og:title"
-      content="Trujillo Chamber of Commerce Directory Page"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://camaralalibertad.org.pe/wp-content/uploads/2023/07/camara-de-comercio-de-la-libertad-portada.jpg"
-    />
-    <meta
-      property="og:url"
-      content="https://isasachi.github.io/wdd231/chamber/Directory.html"
-    />
-    <title>Trujillo Chamber of Commerce Directory Page</title>
+    <title>Trujillo Chamber of Commerce Confirmation Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,9 +33,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- Scripts -->
-    <script defer src="./scripts/directory.js"></script>
     <script defer src="./scripts/navigation.js"></script>
     <script defer src="./scripts/menuToggle.js"></script>
+    <script defer src="./scripts/displayFormData.js"></script>
     <script defer src="./scripts/dates.js"></script>
   </head>
   <body>
@@ -69,12 +59,12 @@
         <nav class="navbar">
           <ul class="nav-links">
             <li>
-              <a href="index.html"
+              <a href="index.html" class="active"
                 ><span>Home<i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </li>
             <li>
-              <a href="directory.html" class="active"
+              <a href="directory.html"
                 ><span>Directory<i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </li>
@@ -93,14 +83,14 @@
       </div>
     </header>
     <main>
-      <div class="heading">
-        <h1>Directory</h1>
+      <div class="thank-you-container">
+        <h1>Thank You for Joining!</h1>
+        <section class="confirmation">
+          <h2>Your Application Details</h2>
+          <ul id="form-data"></ul>
+        </section>
+        <a href="index.html">Return to Home</a>
       </div>
-      <div id="directory-selector">
-        <button id="directory-grid" class="active">Grid</button>
-        <button id="directory-list">List</button>
-      </div>
-      <div id="directory-data" class="directory-cards"></div>
     </main>
     <footer>
       <div class="chamber-info">

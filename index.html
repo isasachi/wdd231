@@ -36,7 +36,7 @@
     />
     <link rel="stylesheet" href="./styles/small.css" />
     <link rel="stylesheet" href="./styles/large.css" />
-    <script defer src="./scripts/script.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
   </head>
   <body>
     <header>
@@ -47,10 +47,12 @@
       </div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Chamber</a></li>
-          <li><a href="#">GitHub Profile</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="./chamber/index.html">Chamber</a></li>
+          <li><a href="https://github.com/isasachi">GitHub Profile</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/isaacsalirrosas/">LinkedIn</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -78,15 +80,9 @@
           <button data-filter="cse">CSE</button>
           <button data-filter="wdd">WDD</button>
         </div>
-        <div class="cert-list">
-          <div class="cert cse">CSE 110</div>
-          <div class="cert wdd">WDD 130</div>
-          <div class="cert cse">CSE 111</div>
-          <div class="cert cse">CSE 210</div>
-          <div class="cert wdd">WDD 131</div>
-          <div class="cert wdd no-bg">WDD 231</div>
-        </div>
+        <div class="cert-list"></div>
       </section>
+      <dialog id="course-details"></dialog>
     </main>
     <footer>
       <p>

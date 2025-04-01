@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Trujillo Chamber of Commerce Join Page" />
+    <meta
+      name="description"
+      content="This is the Trujillo Chamber of Commerce Join Page. Become a member and connect with a thriving network of businesses in Trujillo. Gain access to exclusive resources, events, and opportunities to help your business grow."
+    />
+    <meta name="author" content="Isaac Salirrosas" />
+    <meta
+      property="og:title"
+      content="Trujillo Chamber of Commerce Join Page"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://camaralalibertad.org.pe/wp-content/uploads/2023/07/camara-de-comercio-de-la-libertad-portada.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://isasachi.github.io/wdd231/chamber/join.html"
+    />
+    <title>Trujillo Chamber of Commerce Join Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+    <!-- Font Awesome config script -->
+    <script
+      src="https://kit.fontawesome.com/f63bcfaae7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scripts -->
+    <script defer src="./scripts/navigation.js"></script>
+    <script defer src="./scripts/menuToggle.js"></script>
+    <script defer src="./scripts/join.js"></script>
+    <script defer src="./scripts/dates.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="header-content">
+          <div class="logo">
+            <div>
+              <a href="index.html"
+                ><img src="./images/chamber_logo.png" alt="Logo"
+              /></a>
+            </div>
+            <span>Trujillo Chamber of Commerce</span>
+          </div>
+          <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html"
+                ><span>Home<i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="directory.html"
+                ><span>Directory<i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="join.html" class="active"
+                ><span>Join<i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>Discover<i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="join-main-container">
+        <section class="join-form">
+          <h2>Membership Application</h2>
+          <form action="thankyou.html" method="GET">
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first_name"
+              required
+              autocomplete="given-name"
+            />
+
+            <label for="last-name">Last Name:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last_name"
+              required
+              autocomplete="family-name"
+            />
+
+            <label for="title"
+              >Organizational Title:<br />Use only letters separated by
+              hyphens</label
+            >
+            <input
+              type="text"
+              id="title"
+              name="title"
+              pattern="[A-Za-z\-\s]{7,}"
+              required
+              autocomplete="organization-title"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="example@business.com"
+            />
+
+            <label for="phone">Mobile Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="tel"
+            />
+
+            <label for="organization">Business/Organization Name:</label>
+            <input
+              type="text"
+              id="organization"
+              name="organization"
+              required
+              autocomplete="organization"
+            />
+
+            <label for="membership">Select Membership Level:</label>
+            <select id="membership" name="membership">
+              <option value="NP">Non-Profit</option>
+              <option value="Bronze">Bronze</option>
+              <option value="Silver">Silver</option>
+              <option value="Gold">Gold</option>
+            </select>
+
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp" />
+
+            <input type="submit" value="Join Now" />
+          </form>
+        </section>
+
+        <div class="membership-container">
+          <h2>Membership Levels</h2>
+          <section class="membership-levels">
+            <div class="membership-card" id="np">
+              <h3>Non-Profit</h3>
+              <p>Ideal for registered non-profits.</p>
+              <button>Learn More</button>
+            </div>
+            <div class="membership-card" id="bronze">
+              <h3>Bronze</h3>
+              <p>Great for small businesses.</p>
+              <button>Learn More</button>
+            </div>
+            <div class="membership-card" id="silver">
+              <h3>Silver</h3>
+              <p>Increased exposure and benefits.</p>
+              <button>Learn More</button>
+            </div>
+            <div class="membership-card" id="gold">
+              <h3>Gold</h3>
+              <p>Premium benefits for large businesses.</p>
+              <button>Learn More</button>
+            </div>
+          </section>
+        </div>
+
+        <dialog id="membership-dialog">
+          <h2 id="membership-title"></h2>
+          <ul id="membership-benefits"></ul>
+          <button>Close</button>
+        </dialog>
+      </div>
+    </main>
+    <footer>
+      <div class="chamber-info">
+        <strong><p>Trujillo Chamber of Commerce</p></strong>
+        <p>Jr. Junín, N°454</p>
+        <p>Trujillo, La Libertad</p>
+        <p>info@trujillocc.org</p>
+        <p>+51923745746</p>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      </div>
+      <div class="project-info">
+        <p>WDD231 Class Project</p>
+        <p>Isaac Salirrosas</p>
+        <p>&copy; <span id="year"></span> Trujillo Chamber of Commerce</p>
+        <p>Last Modification: <span id="last-update"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
