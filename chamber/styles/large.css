@@ -1,3 +1,5 @@
+/* Large */
+
 @media screen and (min-width: 768px) {
     span, p {
         font-size: 1.125rem;
@@ -93,6 +95,23 @@
         padding: 1rem;
     }
 
+    .discover-container {
+        flex-direction: row;
+      }
+    
+      .sidebar-message {
+        width: 20%;
+        height: fit-content;
+      }
+    
+      .grid-container {
+        width: 80%;
+        grid-template-areas:
+          "card1 card2 card3"
+          "card4 card5 card6"
+          "card7 card8 .";
+      }
+
     footer {
         flex-direction: row;
         justify-content: space-evenly;
@@ -102,3 +121,15 @@
         display: none;
     }
 }
+
+/* Medium */
+
+@media (min-width: 600px) {
+    .grid-container {
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+  }

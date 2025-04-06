@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Trujillo Chamber of Commerce Directory Page" />
+    <meta name="title" content="Trujillo Chamber of Commerce Discover Page" />
     <meta
       name="description"
-      content="Discover top businesses and services in Trujillo with the Trujillo Chamber of Commerce Directory. Connect with local companies, explore industry leaders, and grow your network today!"
+      content="This is the Trujillo Chamber of Commerce Discover Page. Explore the most iconic attractions of Trujillo, Peru — from ancient ruins and colonial architecture to beautiful beaches and cultural heritage sites."
     />
     <meta name="author" content="Isaac Salirrosas" />
     <meta
       property="og:title"
-      content="Trujillo Chamber of Commerce Directory Page"
+      content="Trujillo Chamber of Commerce Discover Page"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -20,9 +20,9 @@
     />
     <meta
       property="og:url"
-      content="https://isasachi.github.io/wdd231/chamber/Directory.html"
+      content="https://isasachi.github.io/wdd231/chamber/discover.html"
     />
-    <title>Trujillo Chamber of Commerce Directory Page</title>
+    <title>Trujillo Chamber of Commerce Discover Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,9 +43,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- Scripts -->
-    <script defer src="./scripts/directory.js"></script>
     <script defer src="./scripts/navigation.js"></script>
     <script defer src="./scripts/menuToggle.js"></script>
+    <script defer src="./scripts/discover.js"></script>
     <script defer src="./scripts/dates.js"></script>
   </head>
   <body>
@@ -74,7 +74,7 @@
               ></a>
             </li>
             <li>
-              <a href="directory.html" class="active"
+              <a href="directory.html"
                 ><span>Directory<i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </li>
@@ -84,7 +84,7 @@
               ></a>
             </li>
             <li>
-              <a href="discover.html"
+              <a href="discover.html" class="active"
                 ><span>Discover<i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </li>
@@ -92,15 +92,9 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div class="heading">
-        <h1>Directory</h1>
-      </div>
-      <div id="directory-selector">
-        <button id="directory-grid" class="active">Grid</button>
-        <button id="directory-list">List</button>
-      </div>
-      <div id="directory-data" class="directory-cards"></div>
+    <main class="discover-container">
+      <div id="sidebar" class="sidebar-message"></div>
+      <section id="places-grid" class="grid-container"></section>
     </main>
     <footer>
       <div class="chamber-info">
