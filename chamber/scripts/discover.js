@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
           card.style.gridArea = `card${index + 1}`;
   
           card.innerHTML = `
-            <img src="${"/wdd231" + place.image}" alt="${place.title}">
+            <img src="/wdd231${place.image}" alt="${place.title}">
             <h3>${place.title}</h3>
             <p>${place.description}</p>
             <small>${place.location}</small>
