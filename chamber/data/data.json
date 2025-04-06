@@ -1,49 +1,49 @@
 [
     {
       "title": "Chan Chan",
-      "image": "images/chan-chan.webp",
+      "image": "/chamber/images/chan-chan.webp",
       "description": "The largest adobe city in pre-Columbian America.",
       "location": "Huanchaco, Trujillo"
     },
     {
       "title": "Huaca del Sol y la Luna",
-      "image": "images/huacas.webp",
+      "image": "/chamber/images/huacas.webp",
       "description": "Moche ceremonial temples with incredible murals.",
       "location": "Valle de Moche, Trujillo"
     },
     {
       "title": "Centro Histórico de Trujillo",
-      "image": "images/centro.webp",
+      "image": "/chamber/images/centro.webp",
       "description": "Colonial architecture and colorful mansions.",
       "location": "Centro, Trujillo"
     },
     {
       "title": "Playa de Huanchaco",
-      "image": "images/huanchaco.webp",
+      "image": "/chamber/images/huanchaco.webp",
       "description": "Famous for its reed boats ('caballitos de totora') and surfing.",
       "location": "Huanchaco, Trujillo"
     },
     {
       "title": "Museo de Arqueología UNT",
-      "image": "images/museo.webp",
+      "image": "/chamber/images/museo.webp",
       "description": "Exhibits artifacts from local pre-Columbian cultures.",
       "location": "Jr. Junín 682, Trujillo"
     },
     {
       "title": "Casa Urquiaga",
-      "image": "images/urquiaga.webp",
+      "image": "/chamber/images/urquiaga.webp",
       "description": "Historic mansion with viceregal-era furniture.",
       "location": "Plaza de Armas, Trujillo"
     },
     {
       "title": "Catedral de Trujillo",
-      "image": "images/catedral.webp",
+      "image": "/chamber/images/catedral.webp",
       "description": "Baroque-style church in the heart of the city.",
       "location": "Plaza de Armas, Trujillo"
     },
     {
       "title": "Balneario Las Delicias",
-      "image": "images/delicias.webp",
+      "image": "/chamber/images/delicias.webp",
       "description": "Peaceful beach ideal for family enjoyment.",
       "location": "Moche, Trujillo"
     }
