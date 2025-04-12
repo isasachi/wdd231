@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synapse AI | Smarter Text Generation</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="logo"
+          ><img src="images/logo.png" alt="Synapse AI Logo" class="logo"
+        /></a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="demo.html" class="active">Demo</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Experience AI Like Never Before</h1>
+        <p>
+          Explore the power of AI with a hands-on demo. See how it can work for
+          your business!
+        </p>
+        <a href="#demo-showcase" class="btn-primary">Try the Demo</a>
+      </div>
+    </section>
+
+    <!-- Demo Showcase -->
+    <section class="demo-showcase" id="demo-showcase">
+      <div class="container">
+        <h2>Interactive AI Demo</h2>
+        <p>Type a prompt and let our AI generate some magic!</p>
+        <!-- Demo Area: You can integrate the OpenAI API here -->
+        <div class="demo-area">
+          <textarea
+            id="ai-input"
+            placeholder="Type a prompt here..."
+          ></textarea>
+          <button id="ai-generate" class="btn-secondary">Generate</button>
+          <div id="ai-output" class="ai-output">
+            <!-- Generated AI response will show here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Synapse AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts/demo.js"></script>
+  </body>
+</html>
