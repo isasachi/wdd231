@@ -15,7 +15,7 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <a href="/" class="logo"
+        <a href="index.html" class="logo"
           ><img src="images/logo.png" alt="Synapse AI Logo" class="logo"
         /></a>
         <nav class="site-nav">
@@ -52,7 +52,7 @@
             <li>✅ Fast AI response</li>
             <li>✅ Email support</li>
           </ul>
-          <a href="#" class="btn primary">Try Pro</a>
+          <a href="#" class="btn primary try-pro-link">Try Pro</a>
         </div>
 
         <div class="card">
@@ -82,6 +82,40 @@
           <button type="submit">Send Message</button>
         </form>
       </section>
+
+      <dialog id="pro-modal" class="modal-form">
+        <form method="dialog" class="modal-content">
+          <h2>Subscribe to Pro</h2>
+          <label>
+            Cardholder Name
+            <input type="text" name="cardName" required />
+          </label>
+          <label>
+            Card Number
+            <input
+              type="text"
+              name="cardNumber"
+              required
+              pattern="\d{16}"
+              placeholder="1234 5678 9012 3456"
+            />
+          </label>
+          <div class="row">
+            <label>
+              Expiration Date
+              <input type="month" name="expiry" required />
+            </label>
+            <label>
+              CVV
+              <input type="text" name="cvv" required pattern="\d{3,4}" />
+            </label>
+          </div>
+          <div class="modal-buttons">
+            <button type="submit">Submit</button>
+            <button type="button" id="close-modal">Cancel</button>
+          </div>
+        </form>
+      </dialog>
     </main>
 
     <footer class="site-footer">
@@ -89,5 +123,7 @@
         <p>&copy; 2025 Synapse AI. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="scripts/modal.js"></script>
   </body>
 </html>

@@ -1,12 +1,28 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const savedPrompt = localStorage.getItem('lastPrompt');
+  const lastPromptDiv = document.getElementById('last-prompt');
+
+  if (savedPrompt) {
+    lastPromptDiv.innerHTML = `<p><strong>Last prompt used:</strong> ${savedPrompt}</p>`;
+  }
+});
+
 document.getElementById('ai-generate').addEventListener('click', async function () {
     const userInput = document.getElementById('ai-input').value;
     const output = document.getElementById('ai-output');
+    const lastPromptDiv = document.getElementById('last-prompt');
   
     if (userInput.trim() === "") {
       alert("Please enter a prompt.");
       return;
     }
   
+    // Save to localStorage
+    localStorage.setItem('lastPrompt', userInput);
+
+    // Show it immediately
+    lastPromptDiv.innerHTML = `<p><strong>Last prompt used:</strong> ${userInput}</p>`;
+
     output.innerHTML = "Loading...";
   
     try {
