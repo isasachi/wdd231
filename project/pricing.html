@@ -21,7 +21,7 @@
         <nav class="site-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="demo.html">Demo</a></li>
+            <li><a href="demo.html">AI Demo</a></li>
             <li><a href="pricing.html" class="active">Pricing</a></li>
           </ul>
         </nav>
@@ -63,8 +63,24 @@
             <li>✅ Priority support</li>
             <li>✅ Dedicated AI models</li>
           </ul>
-          <a href="#" class="btn">Contact Us</a>
+          <a href="#contact" class="btn">Contact Us</a>
         </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="thankyou.html" method="GET">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </section>
     </main>
 
