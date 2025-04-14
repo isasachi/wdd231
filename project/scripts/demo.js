@@ -20,7 +20,6 @@ document.getElementById('ai-generate').addEventListener('click', async function 
     // Save to localStorage
     localStorage.setItem('lastPrompt', userInput);
 
-    // Show it immediately
     lastPromptDiv.innerHTML = `<p><strong>Last prompt used:</strong> ${userInput}</p>`;
 
     output.innerHTML = "Loading...";
